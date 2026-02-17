@@ -20,4 +20,4 @@ npm run dev
 ```
 
 ## Live Demo
-Coming soon
+https://simple-todo-six-phi.vercel.app/
