@@ -2,10 +2,6 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
-  // TODO: Create a state called 'todos' initialized with an array of 3 strings.
-  // Hint: const [todos, setTodos] = useState(["Item 1", "Item 2", ...]);
-
-  // __________________________________________________________________ <--- WRITE CODE HERE
   const [todos, setTodos] = useState(() => {
     const saved = localStorage.getItem("my-todo-list");
     if (saved) {
@@ -41,7 +37,6 @@ function App() {
       </div>
 
       <ul>
-        {/* We will render the list here next */}
         {todos.map((todo, index) => (
           <li key={index}>
             {todo}
